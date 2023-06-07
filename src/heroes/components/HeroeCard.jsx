@@ -10,7 +10,7 @@ export const HeroeCard = ({
 }) => {
 
     //Capturando la url del heroe
-    const heroeImageUrl = `/assets/heroes/${ id }.jpg`;
+    const heroeImageUrl = `/heroes/${ id }.jpg`;
 
     const arrayCharacters = characters.split(","); // => [“123”,”456”,”789”]
 
