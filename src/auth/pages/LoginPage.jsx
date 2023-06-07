@@ -10,9 +10,14 @@ export const LoginPage = () => {
 
     const navigate = useNavigate();
     const onLogin = () => {
+
+        //Obtener del localStorage la ultima ruta (lastPath) guardada 
+        const lastPath = localStorage.getItem('lastPath') || '/';
+
         login('Andres');
         
-        navigate('/', {
+        //Redirigir a la ruta "lastPath"
+        navigate(lastPath, {
             replace: true
         });
     }
